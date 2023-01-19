@@ -1,0 +1,600 @@
+Add a black background color to the top navigation bar
+/* Style the links inside the navigation bar */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flexbox;
+
+}
+
+
+.bodyimg {
+  width: auto;
+  height: auto;
+  background-image: url("../../images/ishara/lab2.jpg");
+  image-rendering: optimizeSpeed;
+}
+
+
+.firstdiv {
+  
+  width: 30%;
+  height: 20%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  background-image: url("../../images/ishara/my.Jpg");
+  /* background-color: red; */
+  background-size: cover;
+
+  display: block;
+  padding: 160px 200px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin: 6% 23%;
+  font-family: sans-serif;
+
+  /* add flexbox style */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.hide {
+  width: 0%;
+  height: 0%;
+  display: none;
+}
+
+/* Style the search box inside the navigation bar */
+.doctortype {
+  width: 420px;
+  padding: 3% 5%;
+  border: none;
+  margin-top: 5px;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 5px;
+  font-family: sans-serif;
+
+}
+
+#district {
+
+  padding: 3% 29%;
+  border: none;
+  margin-top: 5px;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 5px;
+  resize: vertical;
+
+}
+
+.submitBtn {
+  width: 420px;
+  background-color: lightgreen;
+  border: none;
+  padding: 12px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.submitBtn:hover {
+  background-color: rgb(27, 226, 156);
+}
+
+#mys {
+  text-align: center;
+
+}
+
+.addiinfo {
+
+  background-color: rgb(158, 236, 197);
+  padding: 12px;
+  border: none;
+  margin-top: 12px;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 25px;
+}
+
+.addiinfo:hover {
+  background-color: rgb(27, 226, 156);
+}
+
+
+.demo {
+  transition: 33ms;
+}
+
+.addipage {
+  display: none;
+  overflow: visible;
+  background-color: none;
+  flex-direction: row;
+}
+
+
+/* lab scc */
+
+/* Style inputs with type="text", select elements and textareas */
+.container input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+.container input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.container input[type=submit]:hover {
+  background-color: #04AA6D;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  font-family: sans-serif;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+  padding: 20px;
+  background-image: url("../../images/ishara/my.Jpg");
+  background-size: cover;
+}
+
+.imag {
+  width: 50%;
+  background-image: url("../../images/ishara/lab2.jpg");
+  background-size: cover;
+}
+
+.mainnav {
+  width: auto;
+  overflow: hidden;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.discripton {
+
+  overflow: hidden;
+  width: auto;
+  margin: 30% 10%;
+  font-family: sans-serif;
+  color: rgb(81, 73, 73);
+}
+
+/* doctor css */
+
+
+div.gallery {
+  display:block;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  background-image: url("../../images/ishara/my.Jpg");
+
+  
+}
+
+
+
+div.gallery:hover {
+  border: 1px solid rgb(110, 224, 152);
+
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Some left and right padding inside the container */
+.detils {
+  padding: 0 16px;
+  text-align: left;
+
+}
+
+
+.title {
+  color: rgb(51, 201, 156);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(67, 230, 167);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+.button:hover {
+  background-color: rgb(35, 169, 93);
+}
+
+
+#body {
+  background-image: url("../../images/ishara/lab2.jpg");
+}
+
+
+.doctordiv {
+  margin: 5%;
+  display: block;
+}
+
+/* book NOW PAGE */
+
+
+
+.booknav {
+  
+  background-image: url("../../images/ishara/my.Jpg");
+  font-family: sans-serif;
+  width: 70%;
+  height: 120%;
+  margin: 5% 17%;
+  border-radius: 10px;
+  display:block;
+  
+  
+
+}
+
+
+.bookbar{
+  display: flex;
+}
+
+.tablink {
+  background-color: rgb(119, 227, 189);
+  color: #2f3533;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 18px;
+  width: 50%;
+  height: 10%;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.tablink:hover {
+  background-color: rgb(69, 208, 138);
+}
+
+/* Style the tab content */
+.tabcontent {
+  width: 76%;
+  height: 50%;
+  display: none;
+  padding: 5% 5% ;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.appoimnet {
+  
+  margin-left: 3% 5%;
+  display:block;
+}
+
+body {
+  background-image: url("../../images/ishara/lab2.jpg");
+  background-size: cover;
+}
+
+
+
+
+/* migar */
+
+
+
+/*Here styles the header section*/
+header {
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  background-color: #196767;
+  z-index: 10;
+  
+}
+
+.logo {
+  margin-top:10px;
+  margin-left: 10px;
+  position: absolute;
+  left: 40px;
+  width: 300px;
+  height: 70px;
+  display: block;
+  background-image: url("../../images/ishara/Logo.png");
+  background-size: cover;
+  z-index: 2;
+}
+
+.navbar {
+  font-family: sans-serif;
+  align-items: center;
+ 
+  margin-left: 30%;
+  z-index: -1;
+}
+
+.navbar>ul>li {
+ 
+  list-style: none;
+  float: left;
+  padding: 30px 15px 0px 10px;
+  border-bottom: 3px solid transparent;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.navbar>ul>li:hover {
+  border-color: rgb(155, 189, 164);
+  cursor: pointer;
+}
+
+
+
+/* footer goes here */
+footer {
+  margin-top: 10%;
+  padding-left: 150px;
+  position: asolute;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 89%;
+  height: 200px;
+  background-color: #196767;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.column {
+  width: 450px;
+  height: 90%;
+  margin: 15px 15px 0 15px;
+  border-right: 3px solid aliceblue;
+}
+
+#c1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#c2 {
+  width: 700px;
+}
+
+#c3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+}
+
+span {
+  text-align: start;
+  position: absolute;
+  top: 15px;
+  color: white;
+  font-size: 25px;
+  padding: 0 5px;
+  text-align: center;
+  text-justify: inter-word;
+}
+
+
+#c3>.icons>a>i:hover {
+  color: crimson;
+  cursor: pointer;
+}
+
+#c3>.icons>a {
+  text-decoration: none;
+}
+
+#c3>.icons>a>i {
+  font-size: 30px;
+  color: white;
+  padding: 0 10px;
+  transition: .5s all;
+}
+
+.awards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.aws {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.aws.a1 {
+  background-image: url("../../images/ishara/download.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.aws.a2 {
+  background-image: url("../../images/ishara/IHF_Awards_2018.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#c2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 200%;
+
+}
+
+#c2>.map {
+  height: 80%;
+  width: 80%;
+  margin: 5px;
+  background-image: url("../../images/ishara/map.jpg");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.submitmasg{
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: #196767;
+  border-radius: 15px;
+  padding-left: 500px;
+}
+
+a:link {
+ 
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+  background-color: none;
+}
+
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.appodiv{
+  
+width: 30%;
+  height: 20%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  background-image: url("../../images/ishara/my.Jpg");
+  /* background-color: red; */
+  background-size: cover;
+
+
+  padding: 300px 200px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin: 6% 23%;
+  font-family: sans-serif;
+
+  /* add flexbox style */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+
+.input{
+  width: 420px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  padding:20px;
+  border-radius: 10px;
+}
+.heter
+{
+  margin-left: 5%;
+  display: block;
+ 
+}

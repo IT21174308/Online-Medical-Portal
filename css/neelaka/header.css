@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.header {
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: #196767;
+    z-index: 10;
+  }
+  
+  .logo {
+    margin-top:10px;
+    margin-left: 10px;
+    position: absolute;
+    left: 40px;
+    width: 300px;
+    height: 70px;
+    display: block;
+    background-image: url("../../images/Logo.png");
+    background-size: cover;
+    z-index: 2;
+  }
+  
+  .navbar {
+    align-items: center;
+    background-color: #0d8f86;
+    margin-left: 52%;
+    z-index: -1;
+  }
+  
+  .navbar>ul>li {
+   
+    list-style: none;
+    float: left;
+    padding: 30px 15px 0px 10px;
+    border-bottom: 3px solid transparent;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .navbar>ul>li:hover {
+    border-color: rgb(155, 189, 164);
+    cursor: pointer;
+  }
+  
+  
+  
+  /* footer goes here */
+  footer {
+    padding-left: 150px;
+    position: asolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #196767;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+  
+  .column {
+    width: 450px;
+    height: 90%;
+    margin: 15px 15px 0 15px;
+    border-right: 3px solid aliceblue;
+  }
+  
+  #c1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #c2 {
+    width: 700px;
+  }
+  
+  #c3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+  }
+  
+  span {
+    text-align: start;
+    position: absolute;
+    top: 15px;
+    color: white;
+    font-size: 25px;
+    padding: 0 5px;
+    text-align: center;
+    text-justify: inter-word;
+  }
+  
+  
+  #c3>.icons>a>i:hover {
+    color: crimson;
+    cursor: pointer;
+  }
+  
+  #c3>.icons>a {
+    text-decoration: none;
+  }
+  
+  #c3>.icons>a>i {
+    font-size: 30px;
+    color: white;
+    padding: 0 10px;
+    transition: .5s all;
+  }
+  
+  .awards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+  .aws {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .aws.a1 {
+    background-image: url("../../images/download.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .aws.a2 {
+    background-image: url("../../images/IHF_Awards_2018.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #c2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 200%;
+  
+  }
+  
+  #c2>.map {
+    height: 80%;
+    width: 80%;
+    margin: 5px;
+    background-image: url("../../images/map.jpg");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }

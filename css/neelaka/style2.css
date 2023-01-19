@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+body{
+    
+    margin: 0;
+    padding :0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../../images/lab2.jpg");
+    height: 100vh;
+    overflow:hidden;
+  
+}
+
+.container{
+  position: fixed;
+  padding: 20px;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:400px;
+ background-image: url("../../images/my.jpg");
+  border-radius: 5%;
+}
+
+.container .content h1{
+  font-size: 70px;
+  color:#333;
+}
+
+.container .content h1 span{
+  color:crimson;
+}
+
+.form-container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  padding-bottom: 80px;
+  background: #eee;
+}
+
+.form-container form{
+  padding:20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  background: #fff;
+  text-align: center;
+  width: 500px;
+}
+
+.form-container form h3{
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color:#333;
+}
+
+.form-container form input,
+.form-container form select{
+  width: 100%;
+  padding:10px 15px;
+  font-size: 17px;
+  margin:8px 0;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.form-container form select option{
+  background: #fff;
+}
+
+.form-container form .form-btn{
+  background: #fbd0d9;
+  color:crimson;
+  text-transform: capitalize;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+  background: crimson;
+  color:#fff;
+}
+
+.form-container form p{
+  margin-top: 10px;
+  font-size: 20px;
+  color:#333;
+}
+
+.form-container form p a{
+  color:crimson;
+}
+
+.form-container form .error-msg{
+  margin:10px 0;
+  display: block;
+  background: crimson;
+  color:#fff;
+  border-radius: 5px;
+  font-size: 20px;
+  padding:10px;
+}
+
+input,select{
+  width: 100%;
+  padding: 0 0px;
+  height: 40px;
+  font-size: 16px;
+  border:none;
+  /* background-color: gray; */
+  border-radius: 7px;
+  border-bottom: 2px solid rgb(10, 176, 48);
+  margin-bottom:4px;
+  
+}
+
+button{
+  color: white;
+  border: none;
+  float:right;
+  width: 30%;
+  height: 35px;
+  background-color: rgb(6, 121, 48);
+  border-radius: 6px;
+  transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+  margin:28px;
+}
+
+button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0 5px rgb(0, 47, 255);
+  transform: translateY(4px);
+}
+
+p a {
+  color: rgb(194, 18, 21);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+lable,.Username{
+  color: rgb(4, 4, 4);
+  font-family: 'Poppins', sans-serif;
+  padding-top: 4px;
+  font-size: 13px;;
+  float:left
+}
+

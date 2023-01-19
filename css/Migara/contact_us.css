@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 120vh;
+    scroll-behavior: smooth;
+    background-color: #dfe6e9;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("../../images/migara/contactnew2.png");
+    background-size:cover;
+    background-position-x: right;
+    background-color: #24d1dd; 
+   }   
+
+@keyframes fade{
+    0%{
+        opacity: 5;
+    }
+    
+    70%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Here styles the header section*/
+header{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: #1a908f;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo{
+    position: absolute;
+    left: 40px;
+    width: 300px;
+    height: 70px;
+    display: block;
+    background-image: url("../../images/migara/Logo\ Test\ Run\ white\ edition.png");
+    background-size: cover;
+    z-index: 2;
+}
+
+.navbar{
+    margin-right: 80px;
+    z-index: -1;
+}
+
+.navbar > ul > li{
+    list-style: none;
+    float: left;
+    padding: 8px 15px;
+    border-bottom: 3px solid transparent;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar  > ul  > li:hover{
+   border-color: crimson;
+   cursor: pointer;
+}
+
+.btn-bars > a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* There is  */
+
+  
+  .next {
+    right: -50px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev{
+    left: -50px;
+    border-radius: 3px 0 0 3px;
+  }
+
+.pavbar{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: #1a908f;
+    text-align: center;
+}
+
+.pavbar > .btn-bars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 20px;
+    font-size: 15px;
+    border-radius: 15px;
+    height: 20px;
+    padding: 30px 15px;
+    width: auto;
+    border: 3px solid white;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+.pavbar > .emergency{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 20px;
+    font-size: 15px;
+    border-radius: 15px;
+    height: 20px;
+    padding: 30px 15px;
+    width: auto;
+    border: 3px solid crimson;
+    transition: 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.pavbar > .emergency:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.pavbar > .btn-bars:hover{
+    background-color: white;
+    color: black;
+}
+
+.pavbar > .btn-bars:hover > a{
+    color: black;
+}
+
+/*About us*/
+.about-us{
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    height: 420px;
+    width: 100%;
+}
+
+/*.pic{
+    height: 320px;
+    width: 520px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 9px #353b48;
+}*/
+
+.about-us > #bp1{
+    background-image: url("../../images/migara/Abuot\ us.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+.about-us > #bp2{
+    background-image:url("../../images/migara/Service.jpg");
+    background-size: cover;
+    background-position:top ;
+}
+
+.about-us > #bp3{
+    background-image: url("../../images/migara/contact.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    width: 700px;
+    padding: 30px;
+}
+
+.text >p{
+    text-align: justify;
+    font-size: 20px;
+    color: black;
+    font-style:normal;
+}
+
+.text > .btn-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    height: 40px;
+    width: 180px;
+    padding: 10px 20px;
+    border: 3px solid #1a908f;
+    color:  #1a908f;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: 0.3s all;
+}
+
+.text > .btn-about:hover{
+    background-color: #1a908f;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.text > .btn-about:active{
+    scroll-snap-align: center;
+}
+
+hr{
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 95%;
+}
+
+/* footer goes here */
+footer{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #1a908f;
+    left: 50%;
+    position: relative;
+    transform:translateX(-50%);
+}
+
+.column{
+    width: 450px;
+    height: 90%;
+    margin: 15px 15px 0 15px;
+    border-right: 3px solid aliceblue;
+}
+
+#c1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#c2{
+    width: 700px;
+}
+
+#c3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+
+span{
+    text-align: start;
+    position: absolute;
+    top: 15px;
+    color: white;
+    font-size: 25px;
+    padding: 0 5px;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+#c3 > .icons > a > i:hover{
+    color: crimson;
+    cursor: pointer;
+}
+
+#c3 > .icons > a{
+    text-decoration: none;
+}
+
+#c3 > .icons > a > i{
+    font-size: 30px;
+    color: white;
+    padding: 0 10px;
+    transition: .5s all;
+}  
+
+.awards{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.aws{
+    margin:10px;
+    width: 100px;
+    height: 100px;
+}
+
+.aws.a1{
+    background-image: url("../../images/migara/download.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.aws.a2{
+    background-image: url("../../images/migara/IHF_Awards_2018.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#c2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 200%;
+    
+}
+
+#c2 > .map{
+    height: 80%;
+    width: 80%;
+    margin: 5px;
+    background-image: url("../../images/migara/map.jpg");
+    background-position:right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+ p{
+    margin-top: 60px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none; 
+} 
+
+.icons > a > img{
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    transition: .4s ease-in all;
+}
+
+.icons > a:hover > img{
+    background-color: #1165aa;
+}
+
+.icons > a:visited > img{
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+}
+

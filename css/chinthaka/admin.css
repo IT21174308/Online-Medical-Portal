@@ -1,0 +1,579 @@
+html{
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+    background-image: url(../../images/chinthaka/lab2.jpg);
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    font-size: 15px;
+  }
+#menu {
+  background-color: aliceblue;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  padding-top: 20px;
+  /*background-image: url(../images/my1.jpg);*/
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
+}
+#menu .adminlogo{
+  align-items: center;
+  padding: 30px 0 0 30px;
+  
+}
+#menu .title{
+    color: #626466;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0px 0px 0px;
+    font-size: 18px;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+#menu .adminlogo img{
+  width: 100%;
+  height: 100%;
+  padding: 0px 30px 0px 0px;
+  
+  
+}
+#menu .items{
+  margin-top: 20px;
+
+}
+#menu .items li{
+  list-style: none;
+  padding: 10px 0;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0px 0px 0px 10px;
+  transition: 0.3s ease;
+}
+#menu .items li img {
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  margin: 0 10px 0 25px;
+  
+}
+#menu .items li a{
+  text-decoration: none;
+  color: #0C3F5C;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease;
+}
+#menu .items li:hover{
+  background: hsl(172, 61%, 78%);
+  cursor: pointer;
+  margin-inline-start: 0;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 100px;
+
+}
+#menu .items li:hover a {
+  color: #000000;
+}
+#iterface {
+  width: calc(100% - 300px);
+  position: relative;
+  margin: 0px 0px 0px 300px;
+}
+#iterface .navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 15px 30px;
+  border-bottom: 3px solid #0C3F5C;
+  position: fixed;
+  width: calc(100% - 300px);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+#iterface .navigation .admintop{
+  
+  justify-content: center;
+  align-items: center;
+
+}
+.adminpic {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  /*margin-left: 100px;*/
+
+}
+.d-title{
+  color: #0C3F5C;
+  padding: 110px 30px 0px 30px;
+  font-size: 24px;
+  font-weight: 700;
+  
+
+}
+.values{
+  padding: 30px 30px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.values .v-box{
+  background: aliceblue;
+  width: 220px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.values .v-box img{
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin-right: 15px;
+
+}
+.values .v-box h3{
+  font-size: 18px;
+  color: #0C3F5C;
+  text-align: center;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+.values .v-box span{
+  font-size: 15px;
+  color: #0C3F5C;
+  font-weight: bold;
+}
+.board{
+  width: 94%;
+  margin: 30px 0px 30px 30px;
+  background: aliceblue;
+  border-radius: 10px;
+  overflow: auto;
+  font-weight: bold;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
+}
+.board img{
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  
+}
+.board h5{
+  font-weight: 600;
+  font-size: 14px;
+}
+.board .apppatient{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.board .dashdoc{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.board .userdorp{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.board .paypatient{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.board .patientname{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+table{
+  border-collapse: collapse;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+tr{
+  border-bottom: 1px solid aliceblue;
+}
+thead td{
+  font-size: 16px;
+  text-transform: uppercase;
+  background: aliceblue;
+  text-align: start;
+  padding: 15px;
+  color: #0C3F5C;
+}
+.board tr td{
+  padding: 10px 15px;
+}
+.sub-title{
+  color: #0C3F5C;
+  padding: 20px 0px 5px 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.appcheck1 a{
+  text-decoration: none;
+  font-size: 15px;
+  color: crimson;
+}
+
+.appcheck2 a{
+  text-decoration: none;
+  font-size: 15px;
+  color: crimson;
+}
+.dashpatientcheck a{
+  text-decoration: none;
+  font-size: 15px;
+  color: crimson;
+}
+.dashusercheck a{
+  text-decoration: none;
+  font-size: 15px;
+  color: crimson;
+}
+.dashdoccheck1 a{
+  text-decoration: none;
+  font-size: 15px;
+  color: crimson;
+}
+.dashdoccheck2 a{
+  text-decoration: none;
+  font-size: 15px;
+  color: crimson;
+}
+
+.paybillcheck a{
+  text-decoration: none;
+  font-size: 15px;
+  color: crimson;
+}
+.patientcheck1 a{
+  text-decoration: none;
+  font-size: 15px;
+  color: crimson;
+
+}
+.patientcheck2 a{
+  text-decoration: none;
+  font-size: 15px;
+  color: crimson;
+}
+.bg-modal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+   /*visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 0,5s;*/
+}
+.modal-content{
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-image: url(../../images/chinthaka/my4.jpg);
+  background-position: 90%;
+
+}
+img.useravatar{
+  width: 30%;
+  margin-top: 10px;
+
+}
+.adminlogout{
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: large;
+  list-style: none;
+}
+.addpabtn {
+  background-color: rgb(0, 194, 168);
+  border-radius: 100px;
+  color: white;
+  font-weight: 700;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+
+  text-decoration: none;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.adddobtn{
+  background-color: rgb(0, 194, 168);
+  border-radius: 100px;
+  color: white;
+  font-weight: 700;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+
+  text-decoration: none;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.addappointmentbtn{
+  background-color: rgb(0, 194, 168);
+  border-radius: 100px;
+  color: white;
+  font-weight: 700;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.adminlogoutb1 {
+  background-color: #0C3F5C;
+  padding: 16px 0px;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0px 0px 115px;
+  transition: 0.3s;
+  text-decoration: none;
+  border-radius: 11.5px;
+  position: absolute;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.adminlogoutb1 a{
+text-decoration: none;
+color: #ffffff;
+font-family: Arial, Helvetica, sans-serif;
+transition: 0.3s ease;
+padding: 16px 32px;
+font-weight: 700;
+}
+.adminlogoutb1 :hover{
+  background: hsl(172, 61%, 78%);
+  color: #0C3F5C;
+  border-radius: 10px;
+}
+.adminlogoutb2 {
+  background-color: #0C3F5C;
+  padding: 16px 0px;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0px 0px 275px;
+  transition: 0.3s;
+  text-decoration: none;
+  border-radius: 11.5px;
+  position: absolute;
+  font-weight: 700;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.adminlogoutb2 a{
+text-decoration: none;
+color: #ffffff;
+font-family: Arial, Helvetica, sans-serif;
+transition: 0.3s ease;
+padding: 16px 32px;
+}
+.adminlogoutb2 :hover{
+  background: hsl(172, 61%, 78%);
+  color: #00507e;
+  border-radius: 10px;
+}
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+/* Set a style for the submit/add doctor button */
+.addocbtn {
+  background-color: #3d4f5c;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-weight: 700;
+  font-size: large;
+}
+.addocbtn:hover {
+  opacity:5;
+}
+
+.addoccancelbtn {
+  background-color: #3d4f5c;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-weight: 700;
+  font-size: large;
+}
+.addoccancelbtn:hover {
+  opacity:5;
+}
+.addocform-group{
+background-color: hwb(174 0% 37%);
+padding: 0px 30px 0px 30px;
+}
+.addpatcontainer{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  padding: 20px 0px 0px 0px;
+  display: none;
+  overflow: auto;
+ /* visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 0,5s;*/
+
+}
+
+  /* Set a style for the submit/add patient button */
+.adpatbtn {
+    background-color: #3d4f5c;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-weight: 700;
+    font-size: large;
+}
+  
+  .adpatbtn:hover {
+    opacity:5;
+  
+  
+}
+.adpatcancelbtn {
+  background-color: #3d4f5c;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-weight: 700;
+  font-size: large;
+}
+
+.adpatcancelbtn:hover {
+  opacity:5;
+}
+
+.adpatform-group{
+      background-color: hwb(174 0% 37%);
+      padding: 0px 30px 0px 30px;
+      
+}
+.adminloggedin{
+  margin-left: 500px;
+  font-weight: 700;
+  font-size: 25px;
+  color: #0C3F5C;
+  
+}
+.adminloggedin1{
+  font-weight: 700;
+  font-size: 25px;
+  color: #0C3F5C;
+}
+form.adddocform input{
+  width: 200px;
+  margin-top: 20px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+form.adddocform button{
+  width: 200px;
+  text-align: center;
+}
+.adddocform{
+
+  border-radius: 10px;
+  background-color: #9fa1a3;
+  padding: 20px 30px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-80%);
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.adddocform b{
+
+  font-size: 20px;
+  font-weight: 500;
+  color: black ;
+  justify-content:space-between;
+  
+}
+form.adddocform label {
+  width:30px;
+}
+form.adddocform input {
+  width:90%;
+  
+}
+form.adddocform button{
+  background-color: rgb(0, 194, 168);
+  border-radius: 100px;
+  color: white;
+  font-weight: 700;
+  padding: 16px 320px;
+  text-align: center;
+  font-size: 16px;
+
+  text-decoration: none;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.submit{
+  margin-top: 4%;
+}
+.backbtn{
+  background-color: rgb(0, 194, 168);
+  border-radius: 100px;
+  color: white;
+  font-weight: 700;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+
+  text-decoration: none;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} 

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+body{
+    
+    margin: 0;
+    padding :0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../../images/lab2.jpg");
+    height: 100vh;
+    overflow:hidden;
+  
+}
+
+.container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:400px;
+  background-image: url("../../images/my.Jpg");
+  /* background: white; */
+  border-radius: 5%;
+}
+
+.container h1{
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+}
+
+.container form{
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}  
+
+input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border:none;
+  /* background-color: gray; */
+  border-radius: 7px;
+  border-bottom: 2px solid rgb(13, 154, 27);
+  margin-bottom:4px;
+
+  
+}
+
+button{
+  color: white;
+  border: none;
+  float:right;
+    width: 30%;
+    height: 35px;
+    background-color: rgb(12, 167, 82);
+    border-radius: 6px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    margin:28px;
+}
+
+button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0 5px rgb(0, 47, 255);
+  transform: translateY(4px);
+}
+
+p a {
+  color: dodgerblue;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+label{
+
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.Username{
+  color: rgb(4, 4, 4);
+  font-family: 'Poppins', sans-serif;
+  padding-top: 4px;
+  font-size: 13px;;
+  float:left
+}
+
